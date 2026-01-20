@@ -15,6 +15,15 @@ body {
 
 
 /* style for navber  */
+.navber-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: center;
+    /* ADD THIS LINE */
+    padding: 20px 0; /* 20px on top/bottom, 0 on sides */
+}
 
 header{
      background-color: #1c0829;
