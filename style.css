@@ -21,8 +21,9 @@ body {
     max-width: 1100px;
     margin: 0 auto;
     align-items: center;
-    /* ADD THIS LINE */
-    padding: 20px 0; /* 20px on top/bottom, 0 on sides */
+    
+    /* This adds space to the top and bottom to make it thick again */
+    padding: 25px 0; 
 }
 
 header{
@@ -49,15 +50,35 @@ header{
     font-size: 12px;
     color: white;
 }
-.btn-1{
+.btn-1 {
     margin-left: 200px;
-    background: linear-gradient(47.64deg, rgba(247, 233, 63, 1) 16.531%,rgba(251, 9, 180, 1) 49.819%,rgba(145, 0, 248, 1) 81.648%);
+    background: linear-gradient(47.64deg, rgba(247, 233, 63, 1) 16.531%, rgba(251, 9, 180, 1) 49.819%, rgba(145, 0, 248, 1) 81.648%);
     border: none;
     border-radius: 20px;
-    height: 25px;
-    width: 100px;
+    height: 35px; /* Increased slightly to fit text better */
+    width: 120px; /* Increased slightly for the arrow */
     color: white;
-    padding: 5px;
+    cursor: pointer;
+    
+    /* ANIMATION STEP 1: Define the transition speed */
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* ANIMATION STEP 2: Define what happens on hover */
+.btn-1:hover {
+    transform: scale(1.08); /* Makes the button slightly larger */
+    filter: brightness(1.15); /* Makes the gradient glow/brighten */
+    box-shadow: 0 0 15px rgba(251, 9, 180, 0.4); /* Adds a colorful glow */
+}
+
+/* Optional: Animation for the arrow inside the button */
+.btn-1:hover i {
+    transform: translateX(5px); /* Moves the arrow to the right */
+    transition: transform 0.3s ease;
 }
 .navber-title{
     color: white;
