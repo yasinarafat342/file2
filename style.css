@@ -1,4 +1,13 @@
+/* Add this at the very top */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    overflow-x: hidden; /* Prevents accidental horizontal scrolling */
+}
 /* style for main   */
 .inter-font{
   font-family: "Inter", sans-serif;
