@@ -14,20 +14,36 @@
 <body class="inter-font">
     <!-- html for header  -->
     <header>
-        <!-- html for navbr  -->
+        <!-- html for navbr with hamburger menu -->
         <nav class="navber-container">
             <div class="navber">
                 <h2 class="navber-title">Tech<span class="wave">Wave</span></h2>
             </div>
+            
+            <!-- Hamburger Menu Checkbox (Hidden) -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            
+            <!-- Hamburger Icon -->
+            <label for="menu-toggle" class="hamburger">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </label>
+            
+            <!-- Navigation Menu -->
             <div class="navber-item">
                 <ul class="item-list">
-                    <li class="name"><strong>About</strong></li>
-                    <li class="name"><strong>Episodes</strong></li>
-                    <li class="name"><strong>Host</strong></li>
-                 <button class="btn-1">Subscribe  <i class="fa-solid fa-arrow-right"></i></button>
+                    <li class="name"><label for="menu-toggle">About</label></li>
+                    <li class="name"><label for="menu-toggle">Episodes</label></li>
+                    <li class="name"><label for="menu-toggle">Host</label></li>
+                    <li><button class="btn-1">Subscribe  <i class="fa-solid fa-arrow-right"></i></button></li>
                 </ul>
             </div>
+            
+            <!-- Overlay for mobile menu -->
+            <label for="menu-toggle" class="menu-overlay"></label>
         </nav>
+        
         <!-- section for image  -->
         <section class="hero-section">
           <div class="hero-image-container">
@@ -67,7 +83,7 @@
           </div>
         </section>
     </header>
-    <main class="about" >
+    <main class="about">
     <!-- html for card  -->
     <div class="about-title">
             <h2 class="about-name">About the Podcast</h2>
@@ -170,10 +186,7 @@
         </div>
     </section>
 
-
-
-
- <!-- meet with alex  -->
+    <!-- meet with alex  -->
 <section class="meet">
     <div class="meet-title">
         <h2 class="meet-title">Meet the Host</h2>
@@ -198,27 +211,27 @@
 </section>
 <!-- html for footer  -->
  <section class="footer" >
-    <div class="footer-main" style="text-align: center;">
-        <h2 style="color: white; font-size: 35px;">Tech<span class="wave">Wave</span></h2>
-        <div style="text-align: center; display: flex; justify-content: center; gap: 30px;">
-            <div style="display: flex; align-items: center; text-align: center;  " >
+    <div class="footer-main">
+        <h2>Tech<span class="wave">Wave</span></h2>
+        <div class="footer-platforms">
+            <div class="platform">
                 <img src="assets/apple-podcast.png" alt="">
-                <p style="color: gray; font-size: 14px; " >Apple Podcasts</p>
+                <p>Apple Podcasts</p>
             </div>
-            <div style="display: flex; align-items: center; text-align: center; " >
+            <div class="platform">
                 <img src="assets/spotify.png" alt="">
-                <p style="color: gray; font-size: 14px; " >Spotify</p>
+                <p>Spotify</p>
             </div>
-            <div style="display: flex; align-items: center; text-align: center; " >
+            <div class="platform">
                 <img src="assets/youtube-podcast.png" alt="">
-                <p style="color: gray; font-size: 14px; "  >YouTube</p>
+                <p>YouTube</p>
             </div>
-            <div style="display: flex; align-items: center; text-align: center; " >
+            <div class="platform">
                 <img src="assets/apple-podcast.png" alt="">
-                <p style="color: gray; font-size: 14px; " >Twitter</p>
+                <p>Twitter</p>
             </div>
         </div>
-        <p style="color: gray; font-size: 14px; " >© 2026 TechWave Podcast. All rights reserved.</p>
+        <p class="footer-copyright">© 2026 TechWave Podcast. All rights reserved.</p>
     </div>
  </section>
     </main>
