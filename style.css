@@ -15,6 +15,7 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+/* Mobile-first responsive design */
 
 /* Base styles - Mobile */
 .navber-container {
@@ -47,6 +48,8 @@ header {
 }
 
 
+
+/* Hidden checkbox for menu toggle */
 .menu-toggle {
     display: none;
 }
@@ -162,108 +165,22 @@ header {
     height: auto;
 }
 
-.hero-image-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 100%;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.circle-img {
-    width: 100%;
-    max-width: 400px; /* Responsive max */
-    min-width: 200px; /* Responsive min */
-    height: auto;
-}
-
 .microphone-img {
     position: absolute;
-    width: clamp(100px, 45%, 120px);
+    width: 70%;
+    max-width: 100px;
     height: auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .badge-new {
     position: absolute;
-    right: 10%;
-    top: 10%;
-    background-color: #22c55e;
-    color: black;
-    font-weight: bold;
-    padding: 8px 16px;
-    border-radius: 999px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    font-size: clamp(12px, 2vw, 16px); /* Responsive font size */
-}
-
-/* Tablet adjustments */
-@media (min-width: 768px) {
-    .circle-img {
-        max-width: 450px;
-    }
-    
-    .microphone-img {
-        width: clamp(120px, 50%, 350px);
-    }
-    
-    .badge-new {
-        right: 15%;
-        top: 15%;
-        padding: 10px 20px;
-    }
-}
-
-/* Desktop adjustments */
-@media (min-width: 1024px) {
-    .circle-img {
-        max-width: 500px;
-    }
-    
-    .microphone-img {
-        width: clamp(150px, 55%, 250px);
-    }
-    
-    .badge-new {
-        right: 20%;
-        top: 20%;
-    }
-}
-
-/* Small mobile adjustments */
-@media (max-width: 480px) {
-    .circle-img {
-        max-width: 280px;
-        min-width: 180px;
-    }
-    
-    .microphone-img {
-        width: clamp(80px, 40%, 180px);
-    }
-    
-    .badge-new {
-        right: 5%;
-        top: 5%;
-        padding: 6px 12px;
-    }
-}
-
-.badge-new {
-    position: absolute;
-    right: 10px;
-    top: 10px;
+    right: 20px;
+    top: 20px;
     background-color: #22c55e;
     color: black;
     font-weight: bold;
     padding: 4px 12px;
     border-radius: 999px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    font-size: 12px;
 }
 
 .hero-content {
@@ -597,17 +514,16 @@ header {
 
 /* style for footer */
 .footer {
-    background-image: url("assets/footer-bg.png");
+    background-image: url(assets/footer-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     padding: 60px 20px;
     text-align: center;
+    background-size: auto;
 }
 
-
 .footer-main {
-    
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -821,6 +737,7 @@ header {
     }
 }
 
+/* Desktop (1024px and up) */
 @media (min-width: 1024px) {
     .navber-container {
         max-width: 1100px;
@@ -854,6 +771,7 @@ header {
         margin-right: auto;
     }
 }
+
 
 @media (max-width: 480px) {
     .hero-content h1 {
