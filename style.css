@@ -1,0 +1,432 @@
+
+/* style for main   */
+.inter-font{
+  font-family: "Inter", sans-serif;
+}
+
+
+/* style for navber  */
+
+header{
+     background-color: #1c0829;
+}
+.navber-container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto ;
+    align-items: center;
+    text-align: center;
+}
+
+.navber-item .item-list{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    gap: 100px;
+}
+.name{
+    list-style: none;
+    font-size: 12px;
+    color: white;
+}
+.btn-1{
+    margin-left: 200px;
+    background: linear-gradient(47.64deg, rgba(247, 233, 63, 1) 16.531%,rgba(251, 9, 180, 1) 49.819%,rgba(145, 0, 248, 1) 81.648%);
+    border: none;
+    border-radius: 20px;
+    height: 25px;
+    width: 100px;
+    color: white;
+    padding: 5px;
+}
+.navber-title{
+    color: white;
+    font-size: 30px;
+}
+.wave{
+    color: #ec25b0f0;
+}
+
+/* style for tech  */
+
+.hero-section {
+  position: relative;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0d0221;
+  background-image: url(assets/hero-bg.png);
+  background-size: cover;
+  background-position: center;
+  
+  
+}
+
+.hero-image-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-img {
+  height: 320px; 
+}
+
+.microphone-img {
+  position: absolute;
+
+}
+
+.badge-new {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  background-color: #22c55e; /* green-500 */
+  color: black;
+  font-weight: bold;
+  padding: 4px 12px;
+  border-radius: 999px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+
+.hero-content {
+  margin-top: 32px;
+  text-align: center;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 3rem; 
+  font-weight: bold;
+}
+
+.hero-content p {
+  margin-top: 16px;
+  color: #d1d5db; 
+  max-width: 500px;
+}
+
+.hero-buttons {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.btn-primary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  cursor: pointer;
+  background: linear-gradient(to right, #f7e93f, #fb09b4, #9100f8);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+}
+
+.btn-outline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #22c55e;
+  border-radius: 999px;
+  color: #22c55e;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: linear-gradient(to right, #f7e93f, #fb09b4, #9100f8);
+  color: white;
+  border-color: transparent;
+}
+
+.hero-buttons img {
+  width: 20px; 
+}
+
+/* style for about  */
+
+.about{
+    background-color: #1c0829;
+    padding-top: 1px;
+    
+}
+.about-title{
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+.about-name{
+    font-size: 35px;
+    color: white;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+.name-p{
+    font-size: 12px;
+    color: white;
+    opacity: 0.8;
+    margin-top: 5px;
+}
+
+.card-title{
+    color: #00FF88;
+    font-size: 25px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+
+}
+.card-info{
+    font-size: 12px;
+    color: white;
+    opacity: 0.8;
+}
+.card-container{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+/* style for card  */
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.grid-container {
+    display: grid;
+    max-width: 1000px;
+    margin: 0 auto;
+    /* Two equal columns */
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.grid-item {
+    background-color: #1a0b2e; /* Slightly lighter purple for cards */
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+    background-color: #25123d;
+}
+
+/* This makes the first card span two rows */
+.grid-item.tall {
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.grid-item img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 15px;
+    /* Use filter to give icons a colorful glow if they are white */
+    filter: drop-shadow(0 0 5px #ff00ff);
+}
+
+.grid-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.grid-item p {
+    font-size: 0.9rem;
+    color: #b3b3b3;
+    line-height: 1.6;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Stack into 1 column */
+    }
+    .grid-item.tall {
+        grid-row: span 1;
+    }
+}
+/* ------------------ EPISODES ------------------ */
+/* Section Header */
+.episodes {
+    padding: 80px 20px;
+    background-color: #0f041d;
+    color: white;
+}
+
+.episodes h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+/* Grid Layout */
+.episodes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on desktop */
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Card Styling */
+.episode-card {
+    background-color: #1a0b2e;
+    border-radius: 20px;
+    overflow: hidden; /* Clips the video corners to match the card */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.episode-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Responsive Video Container (16:9 Aspect Ratio) */
+.episode-video {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.episode-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Content inside the card */
+.episode-content {
+    padding: 25px;
+}
+
+.episode-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.episode-content p {
+    color: #b3b3b3;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Duration Tag (The green text at the bottom) */
+.episode-duration {
+    display: flex;
+    align-items: center;
+    color: #00ff88; /* Bright green from the image */
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.episode-duration::before {
+    content: '▶'; /* Small play icon */
+    margin-right: 8px;
+    font-size: 0.7rem;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+    .episodes-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .episodes-grid {
+        grid-template-columns: 1fr; /* 1 column for mobile */
+        max-width: 450px; /* Keeps cards from getting too wide on mobile */
+    }
+    
+    .episodes h2 {
+        font-size: 2rem;
+    }
+}
+
+
+
+/* style foe meet  */
+
+.meet{
+   background-color: #1c0829;
+   max-width: 1100px;
+   margin: 0 auto;
+   padding-bottom: 80px;
+}
+
+.meet-title{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.meet-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #250D44;
+    padding: 10px;
+    width: 1060px;
+    height: 250px;
+    padding-bottom: 30px;
+}
+ .images, .icons{
+    border-radius: 20px;
+    gap: 10px;
+    border: 2px solid #250D44;
+    font-size: 80px;
+    align-items: center;
+}
+.alex-info{
+    color: rgba(128, 128, 128, 0.799);
+    font-size: 14px;
+}
+
+
+/* style for footer  */
+.footer{
+   
+   background-image: url(assets/footer-bg.png);
+   background-repeat: no-repeat;
+   
+   
+   height: 250px;
+   background-position: center;
+}
+.footer-main{
+   padding-top: 50px;
+}
